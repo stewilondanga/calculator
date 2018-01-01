@@ -117,7 +117,22 @@ $(document).ready(function() {
 	        }
 	        break;
 
-						
+					//evaluation case- push current value onto array, set display total equal to function displayEval to evaluate and return result, then empty array
+	case '=':
+		runningTotal.push(displayTotal.toString().substring(1, displayTotal.length));
+		displayTotal = displayEval(runningTotal);
+		paused = true;
+		runningTotal = [displayTotal];
+		deciChecker = false;
+		break;
+
+		function displayEval(runningTotal) {
+			var temp = runningTotal.join('');
+			return parseFloat(eval(temp), 10)
+		}
+}
+
+
 
                 var navigate = (function() {
                   $('.dd').toggle();
