@@ -6,6 +6,81 @@ body {
   min-height: 600px;
 }
 
+h4 {
+  font-family: Raleway;
+  color: #EEE;
+  text-shadow: 2px 2px #888;
+  letter-spacing: 12px;
+  border-radius: 22% -45% 9%;
+  border-bottom: 1px #AAA bevel;
+  font-size: 28px;
+}
+
+.container {
+  background: linear-gradient(0deg, rgba(68, 68, 68, 0.6), rgba(160, 160, 160, 0.6));
+  width: 320px;
+  height: 500px;
+  margin-top: 10vh;
+  text-align: center;
+  left: 50%;
+  border-radius: 40px;
+  border: 2px #AAA outset;
+  box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.7);
+}
+
+.display {
+  min-height:80px;
+  overflow-x: hidden;
+  color: #222;
+  text-shadow: 3px 2px #666;
+  border-radius: 25px;
+  width: auto;
+  margin: 9px;
+  background: black;
+  font-size: 46px;
+  text-align: right;
+  padding-right: 10px;
+  padding-left: 17px;
+  box-shadow: 2px 2px 0px 0px rgba(155, 155, 155, 0.6);
+  border: 6px inset #666;
+  background: linear-gradient(#BBB, #DDD);
+}
+
+button {
+  color: #CFC;
+  text-shadow: 1px 2px #555;
+  border: 1px outset;
+  border-radius: 40%;
+  background: linear-gradient(#555, #444);
+  height: 45px;
+  width: 65px;
+  margin: 2px;
+  box-shadow: 3px 1px 1px 2px rgba(0, 0, 0, 0.6);
+  display: inline;
+  font-size: 24px;
+}
+
+button:hover {
+  background: #CFC;
+  color: black;
+}
+
+.row {
+  display: block !important;
+}
+
+.rowFive {
+  padding-left: 69px;
+}
+
+.red {
+  color: #FCC;
+}
+
+.blue {
+  color: #CCF;
+}
+
 h1 {
   font-family: helvetica;
   font-weight: normal;
