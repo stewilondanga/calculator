@@ -88,7 +88,15 @@ $(document).ready(function() {
 			 deciChecker = false;
 			 break;
 
-			 				 
+			 //fix this function- use same functionality as equals
+ case '%':
+	 runningTotal = [];
+	 deciChecker = true;
+	 runningTotal.push(displayTotal.toString().substring(1, displayTotal.length) * .01);
+	 displayTotal = runningTotal;
+	 break;
+
+	 	 
 
                 var navigate = (function() {
                   $('.dd').toggle();
