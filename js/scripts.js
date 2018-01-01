@@ -103,7 +103,13 @@ $(document).ready(function() {
 		deciChecker = false;
 		break;
 
+		//clear current value on screen case
+		      case 'CE':
+		        displayTotal = 0;
+		        deciChecker = false;
+		        break;
 
+						
 
                 var navigate = (function() {
                   $('.dd').toggle();
