@@ -8,6 +8,17 @@ $(document).ready(function() {
 	//boolean to determine if a decimal has been added
 	  var paused = false;
 
+		//boolean to pause & wipe displayed data after evaluation.
+
+		  $('button').click(function() {
+		    var input = $(this).text();
+		    if (paused) {
+		      displayTotal = runningTotal;
+		      paused = false;
+		    }
+		    switch (input) {
+
+
 
 var navigate = (function() {
 	$('.dd').toggle();
