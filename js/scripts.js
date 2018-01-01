@@ -5,6 +5,8 @@ $(document).ready(function() {
   //global var for previous calculations
   var deciChecker = false;
 
+	//boolean to determine if a decimal has been added
+	  var paused = false;
 
 
 var navigate = (function() {
