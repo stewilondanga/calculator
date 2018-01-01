@@ -96,7 +96,14 @@ $(document).ready(function() {
 	 displayTotal = runningTotal;
 	 break;
 
-	 	 
+	 //clear all case
+	case 'AC':
+		displayTotal = 0;
+		runningTotal = [];
+		deciChecker = false;
+		break;
+
+
 
                 var navigate = (function() {
                   $('.dd').toggle();
