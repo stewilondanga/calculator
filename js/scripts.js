@@ -109,6 +109,14 @@ $(document).ready(function() {
 		        deciChecker = false;
 		        break;
 
+						//append decimal to display value
+	      case '.':
+	        if (!deciChecker) {
+	          displayTotal += '.';
+	          deciChecker = true;
+	        }
+	        break;
+
 						
 
                 var navigate = (function() {
