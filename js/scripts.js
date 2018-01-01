@@ -78,7 +78,17 @@ $(document).ready(function() {
         runningTotal.push('*');
         displayTotal = "0";
         deciChecker = false;
-        break; 
+        break;
+
+				//case for division: push display onto array, then push division sign for eval
+		 case '/':
+			 runningTotal.push(displayTotal.toString().substring(1, displayTotal.length));
+			 runningTotal.push('/');
+			 displayTotal = "0";
+			 deciChecker = false;
+			 break;
+
+			 				 
 
                 var navigate = (function() {
                   $('.dd').toggle();
