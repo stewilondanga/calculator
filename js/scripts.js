@@ -58,8 +58,21 @@ $(document).ready(function() {
                 displayTotal = "0";
                 deciChecker = false;
                 break;
+								//case for subtraction: push display onto array, then push minus sign for eval
+							       case '-':
+							         if (displayTotal === 0) {
+							           displayTotal += '-';
+							           displayTotal = displayTotal.toString().substring(1, displayTotal.length);
+							           runningTotal.push('-1*');
+							         } else {
+							           runningTotal.push(displayTotal.toString().substring(1, displayTotal.length));
+							           runningTotal.push('-');
+							           displayTotal = "0";
+							           deciChecker = false;
+							         }
+							         break;
 
-								
+											 
 
                 var navigate = (function() {
                   $('.dd').toggle();
